@@ -17,13 +17,13 @@ program damped_harmonic_oscillator
 	
 	t = 0
 	
-	open(1, file="out.txt")
+	open(1, file = "out.txt")
 	
 	! main loop
 	do n = 1, 10000
 		
-		v = v + ((-(b/m)*v)-(k/m)*x)*delt
-		x = x + v*delt
+		v = v + ((-(b / m) * v) - (k / m) * x) * delt
+		x = x + v * delt
 		
 		t = t + delt
 		
