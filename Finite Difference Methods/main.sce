@@ -47,26 +47,3 @@ for k = 1 : 100 : lent
 end
 
 // see the relevant paper for theoretical formulation.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
