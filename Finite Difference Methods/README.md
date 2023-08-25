@@ -1,1 +1,1 @@
-In this folder, I will detail the procedure for the numerical solution of partial differential equations using the finite difference method.
+In this folder, I will detail the procedure for the numerical solution of partial differential equations using the finite difference method. The targeted PDE for this study is the one dimensional Heat Equation. This particular choice was made because the Schrodinger equation is in essence a Heat Equation as well.
