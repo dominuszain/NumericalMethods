@@ -3,10 +3,12 @@
 program inverse
 
     implicit none
-    
+
+    ! inputs for the subroutine below
     integer :: k = 4
     character(len = 20) :: path = "file.txt"
-    
+
+    ! calling the subroutine
     call inv(k, path)
 
 end program inverse
@@ -14,7 +16,8 @@ end program inverse
 subroutine inv(k, path)
 
     implicit none
-    
+
+    ! inputs for the LAPACK subroutines
     real, dimension(:, :), allocatable :: A, Ainv
     real, dimension(:), allocatable :: work
     integer, dimension(:), allocatable :: ipiv
@@ -28,9 +31,7 @@ subroutine inv(k, path)
     allocate(work(k))
     allocate(ipiv(k))
     
-    ! read input from a specified file
-    
-    print *, "enter the values column-wise: "
+    ! ideally, inputs would be read from a file
     do m = 1, k
         
         read *, (A(o, m), o = 1, k)
@@ -51,17 +52,18 @@ subroutine inv(k, path)
     Ainv = A
     
     ! calling lapack subroutines
+    ! note that the output of the first subroutine would be used as input for the second
+    ! explore the LAPACK documentation at:
+    ! https://www.netlib.org/lapack/explore-html/index.html
     
     call dgetrf(n, n, Ainv, n, ipiv, info)
-    
     call dgetri(n, Ainv, n, ipiv, work, n, info)
     
     print *
     
     open(1, file = path)
     
-    ! writing output
-    
+    ! writing output in matrix form
     do m = 1, k
         
         print *, (Ainv(o, m), o = 1, k)
