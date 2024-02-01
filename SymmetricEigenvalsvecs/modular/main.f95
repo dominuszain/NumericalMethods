@@ -110,9 +110,7 @@ module eigen
             ! eigenvalues for symmetric matrices
             
             call dsyev(jobz, uplo, n, matrix, lda, w, work, lwork, info)
-            
-            print *
-            
+                        
             open(1, file = outpath)
                 
                 write (1, *) "Eigenvalues: "
