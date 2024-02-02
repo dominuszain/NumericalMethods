@@ -7,7 +7,7 @@ program mread
     
     open(1, file = "subrerite.vout")
 
-    ! the below reads the matrix transposed.
+    ! the below reads the matrix the wrong way.
     !read (1,*, iostat = reason) matrix(:, :)
     
     do i = 1, 2
