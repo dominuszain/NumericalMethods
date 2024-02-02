@@ -2,7 +2,6 @@ program msize
 
     implicit none
     
-    !real, dimension(:, :), allocatable :: matrix
     real :: a
     integer :: i, j, reason
     
@@ -37,16 +36,6 @@ program msize
     
     print *, i, reason
     
-    !close(1)
-    
-    !allocate(matrix(1, 1))
-    
-    !open(1, file = "subrerite.vout")
-    
-    !    read(1, *, iostat = reason) matrix(:, :)
-    
-    !close(1)
-    
-    !deallocate(matrix) 
+    close(1)
     
 end program msize
