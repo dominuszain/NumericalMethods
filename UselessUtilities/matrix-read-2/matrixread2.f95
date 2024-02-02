@@ -6,8 +6,15 @@ program mread
     integer :: i, j, reason
     
     open(1, file = "subrerite.vout")
+
+    ! the below reads the matrix transposed.
+    !read (1,*, iostat = reason) matrix(:, :)
     
-    read (1,*, iostat = reason) matrix(:, :)
+    do i = 1, 2
+        
+        read(1,*, iostat = reason) matrix(i, :)
+    
+    end do
     
     print *
     
