@@ -12,4 +12,4 @@ run: main.exe
 	./main.exe
 
 clean:
-	rm -f *.o main.exe
+	rm -f *.o *.mod main.exe
