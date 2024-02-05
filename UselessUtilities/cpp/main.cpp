@@ -48,9 +48,9 @@ int main()
     MatrixXd m(2,2);
     m << 1, 5, 8, 4;
 
-    saveData("matrix.out", m);
+    SaveTxt("matrix.out", m);
 
-    MatrixXd m2 = openData("matrix.out");
+    MatrixXd m2 = OpenTxt("matrix.out");
 
     cout << m2.inverse() << endl;
     
