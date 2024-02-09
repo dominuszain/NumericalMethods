@@ -1,1 +1,0 @@
-g++ -I /home/zain/c-plus-plus/eigen-3.4.0 better.cpp -o better.exe
