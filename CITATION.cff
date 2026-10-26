@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+type: software
+title: "Numerical methods: ODEs, PDEs, and integration"
+abstract: "Coursework implementations of Euler's method, explicit finite differences for the heat equation, Monte Carlo integration, and small Fortran utilities."
+authors:
+  - family-names: Ul Abideen
+    given-names: Zain
+    email: zain2@uni-bremen.de
+    affiliation: University of Bremen
+version: "1.0.0"
+date-released: "2026-10-26"
+license: MIT
+url: "https://github.com/dominuszain/NumericalMethods"
+repository-code: "https://github.com/dominuszain/NumericalMethods"
+keywords:
+  - numerical methods
+  - ordinary differential equations
+  - partial differential equations
+  - finite difference
+  - monte carlo integration
+  - fortran
+  - scilab
